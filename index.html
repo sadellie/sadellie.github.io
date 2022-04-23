@@ -1,14 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Sadellie's cool website</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Button */
+        .myButton {
+            background-color: #b100ae;
+            border-radius: 28px;
+            border: none;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 1.25rem;
+            padding: 16px 31px;
+            text-decoration: none;
+        }
+
+        .myButton:hover {
+            background-color: #960096;
+        }
+
+        /* DIVIDER */
+        .hr {
+            border-top: solid #777777;
+        }
+
+        #index h1 {
+            color: #B100AF;
+        }
+
+        #index a {
+            font-size: x-large;
+            color: #B100AF;
+            text-decoration: none;
+        }
+
+        #index a:hover {
+            text-decoration: underline;
+        }
+
+        #index .myIcon {
+            font-size: xx-large;
+            color: #000000;
+            transition: .229s ease;
+        }
+
+        #index .myIcon:hover {
+            color: #B100AF;
+            text-decoration: none;
+        }
+
+        /* OVERLAY */
+        #index .overlay {
+            opacity: 0;
+            background-color: rgba(177, 0, 175, 0.5);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: .229s ease;
+        }
+
+        #index .overlay:hover {
+            opacity: 1;
+        }
+
+        #index .glow {
+            transition: .229s ease;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            -khtml-box-shadow: none;
+        }
+
+        #index .glow:hover {
+            box-shadow: 0px 4px 25px rgba(177, 0, 175, 0.69);
+            -moz-box-shadow: 0px 4px 25px rgba(177, 0, 175, 0.69);
+            -webkit-box-shadow: 0px 4px 25px rgba(177, 0, 175, 0.69);
+            -khtml-box-shadow: 0px 4px 25px rgba(177, 0, 175, 0.69);
+        }
+
+        /* SVG MORPHING */
+    </style>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/fav/favicon-16x16.png">
+    <link rel="manifest" href="./images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
-<body>
-    <h1>
-        <a href="./unitto/index.html">Unitto Project</a>
-    </h1>
+
+<body id="index">
+    <div class="container user-select-none">
+        <!-- HERO -->
+        <div class="d-flex align-items-center row row-cols-1 row-cols-sm-2 vh-100">
+            <div class="text-center text-sm-start">
+                <p style="font-size: 4.5rem" class="my-0">Sad Ellie</p>
+                <h2 style="color: #B100AF;">yung developer</h2>
+                <h3>Contact me
+                    <span>
+                        <a class="myIcon ms-2" href="https://github.com/sadellie/">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a class="myIcon ms-2" href="https://www.linkedin.com/in/sadellie/">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a class="myIcon ms-2" href="mailto:sadellie.dev@gmail.com">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </span>
+                </h3>
+                <button onclick="window.location.href = '#about';" class="myButton glow mt-3">Portfolio</button>
+            </div>
+            <img draggable="false" class="my-3" src="./images/hero-anim.svg" alt="hero logo">
+        </div>
+
+        <!-- About me -->
+        <h1 id="about" class="text-center mb-5">About me</h1>
+        <h4>I am a self-taught developer. My goal is to create great software products that make life easier.</h4>
+
+        <!-- Projects -->
+        <h1 class="text-center my-5">Projects</h1>
+
+        <!-- Unitto -->
+        <div class="d-flex align-items-center row row-cols-1 row-cols-sm-2">
+            <div>
+                <h1>Unitto</h1>
+                <h2>Unit converter app for Android</h2>
+                <ul>
+                    <li>More than 350 units</li>
+                    <li>Very precise conversion</li>
+                    <li>SI Standard</li>
+                    <li>Dynamic Theming</li>
+                    <li>Highly customizable</li>
+                </ul>
+                <a href="./unitto/index.html">Learn more ></a>
+            </div>
+            <div class="card border-0 g-0">
+                <img class="card-img" src="./images/unitto.svg" alt="hero logo">
+                <div class="card-img-overlay overlay glow">
+                    <h4 class="card-title"> • Kotlin and Coroutines • Jetpack Compose • Jetpack Navigation • Jetpack
+                        DataStore
+                        • Hilt/Dagger2 • Material Design 3 Components • Retrofit • Moshi • Firebase Analytics • Firebase
+                        Crashlytics
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-4">
+
+        <!-- sadBot -->
+        <div class="d-flex align-items-center row row-cols-1 row-cols-sm-2">
+            <div>
+                <h1>sadBot</h1>
+                <h4>VK chat bot for students</h4>
+                <ul>
+                    <li>Easily adapts to your needs</li>
+                    <li>Teachers names database</li>
+                    <li>Exams schedule database</li>
+                    <li>Keeps your chats clean</li>
+                </ul>
+                <a href="https://vk.link/sadb0t">Learn more ></a>
+            </div>
+            <div class="card border-0 g-0">
+                <img class="card-img" src="./images/sadbot.svg" alt="hero logo">
+                <div class="card-img-overlay overlay glow">
+                    <h4 class="card-title"> • Python • VK API • vkbottle • aiohttp • xlwt • xlrd • pandas</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-4">
+
+        <!-- Web -->
+        <div class="d-flex align-items-center row row-cols-1 row-cols-sm-2">
+            <div>
+                <h1>Web</h1>
+                <h2>This and other webpages</h2>
+                <ul>
+                    <li>Responsive</li>
+                    <li>CSS Animations</li>
+                    <li>SVG Morphing</li>
+                    <li>Looks cool, idk</li>
+                </ul>
+                <a href="#">Learn more ></a>
+            </div>
+            <div class="card border-0 g-0">
+                <img class="card-img" src="./images/web.svg" alt="hero logo">
+                <div class="card-img-overlay overlay glow">
+                    <h4 class="card-title"> • HTML5 • CSS • Bootstrap 5 • GitHub Pages • VK Pages • Figma</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="my-4">
+
+        <!-- Web -->
+        <div class="d-flex align-items-center row row-cols-1 row-cols-sm-2">
+            <div>
+                <h1>Others</h1>
+                <h2>Secret commercial projects</h2>
+                <a>You can't learn more, lol</a>
+            </div>
+            <div class="card border-0 g-0">
+                <img class="card-img" src="./images/others.svg" alt="hero logo">
+                <div class="card-img-overlay overlay glow">
+                    <h4 class="card-title"> • Python • Bash • CSV • JSON</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        You scrolled so much, nice!
+    </footer>
 </body>
+
 </html>
