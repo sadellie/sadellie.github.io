@@ -1,0 +1,31 @@
+<svg width="625" height="373" viewBox="0 0 625 373" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_90_143)">
+      <rect width="625" height="373" fill="#FFF7FF" />
+      <rect x="248.214" y="-0.922241" width="122" height="41" transform="rotate(33 248.214 -0.922241)" fill="#C4C4C4" />
+      <rect x="221.527" y="40.1726" width="92" height="7" transform="rotate(33 221.527 40.1726)" fill="#DA83D9" />
+      <path
+        d="M448.27 126.082C474.053 122.117 502.215 125.217 506.186 153.457C507.077 159.795 506.648 161.341 505.497 167.53C500.578 193.986 496.914 214.124 469.792 218.847C442.429 223.61 405.766 203.319 397.688 176.664C393.651 163.342 405.065 152.106 414.836 142.44C426.375 131.024 438.689 127.555 448.27 126.082Z"
+        fill="#DA83D9" />
+      <ellipse cx="456.048" cy="173.478" rx="25.5058" ry="25.5527" transform="rotate(33 456.048 173.478)"
+        fill="#CD07CB" />
+      <rect x="298.584" y="151.025" width="69" height="13" transform="rotate(33 298.584 151.025)" fill="#DA83D9" />
+      <rect x="176.867" y="108.944" width="76" height="15" transform="rotate(33 176.867 108.944)" fill="#C4C4C4" />
+      <rect x="163.251" y="129.91" width="103" height="37" transform="rotate(33 163.251 129.91)" fill="#C4C4C4" />
+      <rect x="137.653" y="169.328" width="84" height="18" transform="rotate(33 137.653 169.328)" fill="#DA83D9" />
+      <rect x="328.018" y="211.276" width="136.5" height="83" rx="24" transform="rotate(33 328.018 211.276)"
+        fill="#DA83D9" />
+      <line x1="122.675" y1="192.391" x2="390.211" y2="366.131" stroke="#777777" />
+      <rect x="116.956" y="201.197" width="59" height="15" transform="rotate(33 116.956 201.197)" fill="#C4C4C4" />
+      <rect x="103.34" y="222.164" width="113" height="32" transform="rotate(33 103.34 222.164)" fill="#C4C4C4" />
+      <rect x="80.4656" y="257.388" width="84" height="14" transform="rotate(33 80.4656 257.388)" fill="#DA83D9" />
+      <rect x="270.014" y="300.594" width="136.5" height="83" rx="24" transform="rotate(33 270.014 300.594)"
+        fill="#DA83D9" />
+      <rect x="255.304" y="-56.0947" width="367" height="401" rx="35.5" transform="rotate(33 255.304 -56.0947)"
+        stroke="#777777" />
+    </g>
+    <defs>
+      <clipPath id="clip0_90_143">
+        <rect width="625" height="373" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
