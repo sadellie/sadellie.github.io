@@ -105,7 +105,7 @@
             details: [
                 {
                     title: "Play Store",
-                    support: "Get the app and live a review",
+                    support: "Get the app and leave a review",
                     href: "https://play.google.com/store/apps/details?id=com.sadellie.unitto"
                 },
                 {
@@ -114,7 +114,7 @@
                     href: "https://f-droid.org/packages/com.sadellie.unitto"
                 },
                 {
-                    title: "Github",
+                    title: "GitHub",
                     support: "From the developer himself",
                     href: "https://github.com/sadellie/unitto",
                 },
