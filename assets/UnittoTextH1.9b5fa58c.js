@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as s,q as r}from"./index.3b37e4e8.js";const c={},n={class:"text-2xl font-medium"};function a(t,_){return o(),s("p",n,[r(t.$slots,"default")])}const m=e(c,[["render",a]]);export{m as U};

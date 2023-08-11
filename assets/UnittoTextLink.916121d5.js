@@ -1,1 +1,0 @@
-import{_ as t}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c as r,q as s}from"./index.3b37e4e8.js";const n={},c={class:"font-medium text-blue-700 visited:text-fuchsia-700 hover:text-blue-900 hover:underline"};function a(e,i){return o(),r("a",c,[s(e.$slots,"default")])}const f=t(n,[["render",a]]);export{f as U};
