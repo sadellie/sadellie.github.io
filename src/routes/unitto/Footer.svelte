@@ -29,7 +29,7 @@
                 href="mailto:sadellie.dev@gmail.com">Email</a
             ><a
                 class="font-medium text-blue-600 visited:text-fuchsia-700 hover:text-blue-900 hover:underline"
-                href="https://trello.com/b/cxAbRlvu/unitto">Trello board</a
+                href="https://github.com/users/sadellie/projects/2">Task tracker</a
             >
         </div>
         <div>
