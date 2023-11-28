@@ -3,15 +3,14 @@
 
     export let features: Array<Feature>
     import FeatureItem from "./FeatureItem.svelte";
-    import hero from "$lib/images/unitto/hero.jpg";
+    import hero from "$lib/images/unitto/hero.png";
 </script>
 
 <div
-    class="flex flex-col bg-green-200 py-24 xl:py-32 rounded-3xl place-items-center gap-16 bg-center bg-cover"
+    class="flex flex-col py-24 xl:py-32 rounded-3xl place-items-center gap-16 bg-center bg-cover backdrop-invert-0 bg-white/30"
     style="background-image: url({hero});"
 >
     <div class="flex flex-col place place-items-center">
-        <!-- <img src={heroSymbols} alt="hero" /> -->
         <p class="text-6xl md:text-8xl xl:text-9xl text-center font-medium">
             Unitto
         </p>

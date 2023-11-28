@@ -5,8 +5,8 @@
     export let href: string;
 
     $: background = isSelected
-    ? "bg-unitto-secondaryContainer hover:bg-unitto-surfaceContainer-active-hover"
-    : "hover:bg-unitto-surfaceContainer-inactive-hover"
+    ? "bg-unitto-dark-secondaryContainer hover:bg-unitto-dark-surfaceContainer-active-hover"
+    : "hover:bg-unitto-dark-surfaceContainer-inactive-hover"
 
     $: icon_state_class = isSelected
         ? "text-unitto-on-secondary-container"

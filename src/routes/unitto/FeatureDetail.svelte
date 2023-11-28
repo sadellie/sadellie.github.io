@@ -1,5 +1,4 @@
 <script lang="ts">
-    import snake from "$lib/images/unitto/snake.svg";
     import Snake from "./Snake.svelte";
     export let image: string;
     export let title: string;

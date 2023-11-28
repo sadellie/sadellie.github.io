@@ -16,12 +16,12 @@
 	import Telegram from "./Telegram.svelte";
 </script>
 
-<div class="flex flex-col place-items-center p-8 bg-fuchsia-50">
+<div class="flex flex-col place-items-center p-8 bg-fuchsia-50 dark:bg-fuchsia-950 text-black dark:text-white">
 	<div
-		class="flex flex-col bg-fuchsia-200 py-16 xl:py-32 rounded-3xl place-items-center gap-8 bg-center bg-cover w-full relative"
+		class="flex flex-col py-16 xl:py-32 rounded-3xl place-items-center gap-8 bg-center bg-cover w-full relative dark:invert"
 		style="background-image: url({hero});"
 	>
-		<div class="flex flex-col place place-items-center">
+		<div class="flex flex-col place place-items-center dark:invert">
 			<p class="text-6xl md:text-8xl xl:text-9xl text-center font-medium">
 				Sad Ellie
 			</p>
@@ -29,14 +29,14 @@
 		</div>
 		<a href="#contact">
 			<button
-				class="py-6 px-12 bg-fuchsia-600 hover:bg-fuchsia-500 transition-colors rounded-full text-2xl font-medium text-white"
+				class="py-6 px-12 bg-fuchsia-600 dark:bg-fuchsia-800 hover:bg-fuchsia-500 dark:hover:bg-fuchsia-700 transition-colors rounded-full text-2xl font-medium text-white dark:invert"
 			>
 				Contact
 			</button>
 		</a>
 	</div>
 
-	<div class="max-w-screen-xl">
+	<div class="max-w-screen-xl text-black dark:text-fuchsia-50">
 		<p class="text-4xl font-medium pt-16 pb-4 w-full">Who is Sad Ellie?</p>
 
 		<p class="w-full text-lg pb-2">

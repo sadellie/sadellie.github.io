@@ -61,7 +61,7 @@
                 },
                 {
                     title: "Unit converter",
-                    support: "700 Units and currencies for every situation",
+                    support: "570 Units and currencies for every situation",
                 },
                 {
                     title: "The list goes on",
@@ -204,6 +204,6 @@
         </div>
     </div>
 
-    <hr />
+    <hr class="border-unitto-dark-outline"/>
     <Footer />
 </div>

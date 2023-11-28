@@ -24,7 +24,7 @@
     }
 </script>
 
-<div class="relative bg-white">
+<div class="relative bg-unitto-dark-background text-unitto-dark-onBackground">
     <!-- Top bar -->
     <TopBar on:menuClick={openMenu} />
 
@@ -33,12 +33,12 @@
 
     <!-- Nav bar -->
     <div
-        class="lg:hidden z-20 fixed top-0 h-full transition-transform -translate-x-full px-2 w-80 rounded-e-3xl bg-unitto-surface"
+        class="lg:hidden z-20 fixed top-0 h-full transition-transform -translate-x-full px-2 w-80 rounded-e-3xl bg-unitto-dark-surface text-unitto-dark-onSurface"
         id="drawer"
     >
         <button on:click={closeMenu}>
             <span
-                class="material-symbols-outlined hover:bg-unitto-surfaceContainer-inactive-hover rounded-full p-3 m-2"
+                class="material-symbols-outlined hover:bg-unitto-dark-surfaceContainer-inactive-hover rounded-full p-3 m-2"
             >
                 menu_open
             </span>
@@ -67,7 +67,7 @@
     </div>
 
     <div class="flex flex-row relative">
-        <div class="hidden lg:block sticky top-0 h-screen bg-unitto-surface">
+        <div class="hidden lg:block sticky top-0 h-screen bg-unitto-dark-surface text-unitto-dark-onSurface">
             <!-- Navigation rail -->
             <div class="flex flex-col gap-4 pt-6">
                 <TabListItemVertical

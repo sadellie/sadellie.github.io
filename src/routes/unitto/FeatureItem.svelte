@@ -12,7 +12,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-    class="p-6 rounded-3xl bg-unitto-surface flex flex-row items-stretch hover:bg-unitto-surfaceContainer-active-hover transition-colors"
+    class="p-6 rounded-3xl bg-unitto-dark-surface text-unitto-dark-onSurface flex flex-row items-stretch hover:bg-unitto-dark-surfaceContainer-inactive-hover transition-colors"
     class:cursor-pointer={href}
     class:gap-2={support != ""}
     on:click={onClick}

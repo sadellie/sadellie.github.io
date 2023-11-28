@@ -6,7 +6,7 @@
 </script>
 
 <a
-    class="group/item flex flex-col rounded-2xl hover:rounded-3xl bg-fuchsia-100 hover:bg-fuchsia-200 overflow-hidden transition-all h-full"
+    class="group/item flex flex-col rounded-2xl hover:rounded-3xl bg-fuchsia-100 dark:bg-fuchsia-900 hover:bg-fuchsia-200 dark:hover:bg-fuchsia-800 overflow-hidden transition-all h-full"
     href={href}
 >
     <div class="rounded-b-2xl h-48 w-full bg-cover bg-center object-scale-down" style="background-image: url({imgSrc})"/>

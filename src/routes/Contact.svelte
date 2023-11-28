@@ -1,16 +1,14 @@
 <script lang="ts">
-    import Email from "./Email.svelte";
-
     export let title: string;
     export let href: string;
     export let img: string;
 </script>
 
 <a
-    class="group/item flex flex-col rounded-2xl hover:rounded-3xl bg-fuchsia-100 hover:bg-fuchsia-200 overflow-hidden transition-all"
+    class="group/item flex flex-col rounded-2xl hover:rounded-3xl bg-fuchsia-100 dark:bg-fuchsia-900 hover:bg-fuchsia-200 dark:hover:bg-fuchsia-800 overflow-hidden transition-all h-full"
     {href}
     ><div
-        class="relative flex place-content-center place-items-center rounded-b-2xl bg-gradient-to-tl overflow-hidden from-fuchsia-100 via-pink-100 to-blue-100"
+        class="relative flex place-content-center place-items-center rounded-b-2xl bg-gradient-to-tl overflow-hidden from-fuchsia-800 via-pink-900 to-blue-900"
     >
         <div class="opacity-0 group-hover/item:opacity-100 transition-all rounded-b-2xl h-48 w-full bg-cover bg-center object-scale-down" style="background-image: url({img})"/>
         <div

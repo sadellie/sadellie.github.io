@@ -1,2 +1,5 @@
 # Sad Ellie's cool website
-Build with SvelteKit
+
+```
+npm run dev
+```

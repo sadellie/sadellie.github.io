@@ -36,12 +36,13 @@
         <p class="text-2xl font-medium">Log Data</p>
         <p>
             I want to inform you that whenever you use my Service, in a case of
-            an error in the app I collect data and information (through
+            an error in the app I may collect data and information (through
             third-party products) on your phone called Log Data. This Log Data
             may include information such as your device Internet Protocol (“IP”)
             address, device name, operating system version, the configuration of
             the app when utilizing my Service, the time and date of your use of
-            the Service, and other statistics.
+            the Service, and other statistics. This information may be send by
+            Google Play Services.
         </p>
         <p class="text-2xl font-medium">Cookies</p>
         <p>
@@ -115,7 +116,7 @@
             notify you of any changes by posting the new Privacy Policy on this
             page.
         </p>
-        <p>This policy is effective as of 2023-01-18</p>
+        <p>This policy is effective as of 2023-11-28</p>
         <p class="text-2xl font-medium">Contact Us</p>
         <p>
             If you have any questions or suggestions about my Privacy Policy, do
