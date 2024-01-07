@@ -64,6 +64,13 @@
             href="/unitto/terms"
             on:onNavigate={closeMenu}
         />
+        <TabListItemHorizontal
+            title="FAQ"
+            icon="help"
+            isSelected={$page.url.pathname === "/unitto/faq"}
+            href="/unitto/faq"
+            on:onNavigate={closeMenu}
+        />
     </div>
 
     <div class="flex flex-row relative">
@@ -87,6 +94,12 @@
                     icon="privacy_tip"
                     isSelected={$page.url.pathname === "/unitto/terms"}
                     href="/unitto/terms"
+                />
+                <TabListItemVertical
+                    title="FAQ"
+                    icon="help"
+                    isSelected={$page.url.pathname === "/unitto/faq"}
+                    href="/unitto/faq"
                 />
             </div>
         </div>
