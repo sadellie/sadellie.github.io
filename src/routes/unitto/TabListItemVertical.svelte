@@ -4,6 +4,10 @@
     export let isSelected: Boolean = false;
     export let href: string;
 
+    $: background = isSelected
+    ? "bg-unitto-dark-secondaryContainer hover:bg-unitto-dark-surfaceContainer-active-hover"
+    : "hover:bg-unitto-dark-surfaceContainer-inactive-hover"
+
     $: icon_state_class = isSelected
         ? "text-unitto-on-secondary-container bg-unitto-secondaryContainer group-hover/item:bg-unitto-surfaceContainer-active-hover"
         : "text-unitto-on-surface-variant group-hover/item:bg-unitto-surfaceContainer-inactive-hover";
@@ -25,7 +29,7 @@
     on:click={click}
 >
     <span
-        class="material-symbols-outlined px-4 rounded-full group-hover/item:font-semibold transition-all text-2xl {icon_state_class}"
+        class="material-symbols-outlined px-4 rounded-full group-hover/item:font-semibold transition-all text-2xl {icon_state_class} {background}"
         >{icon}</span
     >
 
