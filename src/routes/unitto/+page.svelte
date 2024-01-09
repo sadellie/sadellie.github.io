@@ -17,7 +17,7 @@
     import SideImage from "./SideImage.svelte";
     import Footer from "./Footer.svelte";
 
-    import type { Feature } from "./FeatureInteraces";
+    import type { Feature } from "./IFeature";
     import Snake from "./Snake.svelte";
 
     const features: Array<Feature> = [
@@ -138,7 +138,7 @@
                     sideImage.classList.replace("opacity-100", "opacity-0");
                 }
             },
-            { threshold: [0.5] }
+            { threshold: [0.3] }
         ).observe(elem);
     }
 

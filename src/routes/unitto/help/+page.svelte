@@ -15,7 +15,7 @@
 </script>
 
 <WallOfText>
-  <TextTitle>FAQ</TextTitle>
+  <TextTitle>Help</TextTitle>
   <TextHeader1 id="add-time-zones">⌚ Add more time zones?</TextHeader1>
   <p>No.</p>
   <div class="bg-unitto-dark-secondaryContainer rounded-2xl p-4">

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Feature } from "./FeatureInteraces";
+    import type { Feature } from "./IFeature";
 
     export let features: Array<Feature>
     import FeatureItem from "./FeatureItem.svelte";
