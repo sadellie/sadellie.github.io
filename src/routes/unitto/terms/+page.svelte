@@ -1,7 +1,9 @@
 <script lang="ts">
-  import TextHeader1 from "../TextHeader1.svelte";
-  import TextTitle from "../TextTitle.svelte";
-  import WallOfText from "../WallOfText.svelte";
+  import Footer from "../Footer.svelte";
+  import TextHeader1 from "../../../components/TextHeader1.svelte";
+  import TextTitle from "../../../components/TextTitle.svelte";
+  import WallOfText from "../../../components/WallOfText.svelte";
+  import { UnittoTheme } from "../UnittoTheme";
 </script>
 
 <WallOfText>
@@ -82,14 +84,16 @@
     licenses granted to you in these terms will end; (b) you must stop using the
     app, and (if needed) delete it from your device.
   </p>
-  <TextHeader1>Changes to This Terms and Conditions</TextHeader1>
+  <TextHeader1 theme={UnittoTheme}
+    >Changes to This Terms and Conditions</TextHeader1
+  >
   <p>
     I may update our Terms and Conditions from time to time. Thus, you are
     advised to review this page periodically for any changes. I will notify you
     of any changes by posting the new Terms and Conditions on this page.
   </p>
   <p>These terms and conditions are effective as of 2023-01-18</p>
-  <TextHeader1>Contact Us</TextHeader1>
+  <TextHeader1 theme={UnittoTheme}>Contact Us</TextHeader1>
   <p>
     If you have any questions or suggestions about my Terms and Conditions, do
     not hesitate to contact me at <a
@@ -107,4 +111,6 @@
       App Privacy Policy Generator
     </a>
   </p>
+  <hr />
+  <Footer />
 </WallOfText>

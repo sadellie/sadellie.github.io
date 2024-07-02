@@ -1,13 +1,14 @@
 <script lang="ts">
   import unittoLogo from "$lib/images/unitto/unitto-logo.svg";
-  import TextBodyLink from "./TextBodyLink.svelte";
+  import TextBodyLink from "../../components/TextBodyLink.svelte";
+  import { UnittoTheme } from "./UnittoTheme";
 </script>
 
 <footer>
   <div class="grid grid-cols-1 p-4 gap-4">
     <div class="flex justify-start items-center gap-4">
       <img
-        class="w-28 p-2 rounded-3xl border-2 border-unitto-dark-outline bg-unitto-dark-background hover:scale-110 hover:-translate-y-5 transition-all hover:shadow-2xl"
+        class="w-28 p-2 rounded-3xl border-2 {UnittoTheme.outlineBorder} hover:scale-110 hover:-translate-y-5 transition-all hover:shadow-2xl"
         src={unittoLogo}
         alt="unitto"
       />
@@ -18,7 +19,7 @@
     </div>
     <div class="flex flex-wrap gap-x-8">
       <TextBodyLink href="/">
-        <p class="font-bold hover:underline text-white">by Sad Ellie</p>
+        <p class="font-bold hover:underline">by Sad Ellie</p>
       </TextBodyLink>
       <TextBodyLink href="https://forms.gle/YRKapCk91J63gzM27"
         >Anonymous request</TextBodyLink

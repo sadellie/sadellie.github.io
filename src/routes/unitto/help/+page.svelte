@@ -1,11 +1,13 @@
 <script>
-  import TextBodyLink from "../TextBodyLink.svelte";
-  import TextHeader1 from "../TextHeader1.svelte";
-  import TextHeader2 from "../TextHeader2.svelte";
-  import TextHeader3 from "../TextHeader3.svelte";
-  import TextHeader4 from "../TextHeader4.svelte";
-  import TextTitle from "../TextTitle.svelte";
-  import WallOfText from "../WallOfText.svelte";
+  import TextBodyLink from "../../../components/TextBodyLink.svelte";
+  import Footer from "../Footer.svelte";
+  import TextHeader1 from "../../../components/TextHeader1.svelte";
+  import TextHeader2 from "../../../components/TextHeader2.svelte";
+  import TextHeader3 from "../../../components/TextHeader3.svelte";
+  import TextHeader4 from "../../../components/TextHeader4.svelte";
+  import TextTitle from "../../../components/TextTitle.svelte";
+  import { UnittoTheme } from "../UnittoTheme";
+  import WallOfText from "../../../components/WallOfText.svelte";
 
   let addTimeZoneDetail = false;
 
@@ -16,14 +18,16 @@
 
 <WallOfText>
   <TextTitle>Help</TextTitle>
-  <TextHeader1 id="add-time-zones">⌚ Add more time zones?</TextHeader1>
+  <TextHeader1 theme={UnittoTheme} id="add-time-zones"
+    >⌚ Add more time zones?</TextHeader1
+  >
   <p>No.</p>
-  <div class="bg-unitto-dark-secondaryContainer rounded-2xl p-4">
+  <div class="{UnittoTheme.secondaryContainer} rounded-2xl p-4">
     <div class="flex flex-row items-center">
       <TextHeader2>But… why?</TextHeader2>
       <button on:click={toggleTimeZoneDetails}>
         <span
-          class="transition-transform material-symbols-outlined rounded-full p-3 m-2 hover:bg-unitto-dark-surfaceContainer-active-hover"
+          class="transition-transform material-symbols-outlined rounded-full p-3 m-2 {UnittoTheme.onSecondaryContainerHover}"
           class:rotate-180={addTimeZoneDetail}>expand_more</span
         >
       </button>
@@ -84,7 +88,9 @@
     </div>
   </div>
   <hr />
-  <TextHeader1 id="body-mass-index">👩‍⚕️ Body Mass Index</TextHeader1>
+  <TextHeader1 theme={UnittoTheme} id="body-mass-index"
+    >👩‍⚕️ Body Mass Index</TextHeader1
+  >
   <p>
     Please note that the values displayed in the app are intended for
     entertainment purposes only. They can not replace professional medical
@@ -96,4 +102,6 @@
     <li>Diagnosed with an eating disorder</li>
   </ul>
   <p>Please contact your care provider for more information.</p>
+  <hr />
+  <Footer />
 </WallOfText>

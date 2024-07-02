@@ -1,10 +1,9 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import type { DrawerItem } from "./IDrawerItem";
-  import Scrim from "./Scrim.svelte";
-  import TabListItemHorizontal from "./TabListItemHorizontal.svelte";
-  import TabListItemVertical from "./TabListItemVertical.svelte";
-  import TopBar from "./TopBar.svelte";
+  import type { DrawerItem } from "../../components/IDrawerItem";
+  import { UnittoTheme } from "./UnittoTheme";
+  import AdaptiveLayout from "../../components/AdaptiveLayout.svelte";
+  import unittoLogo from "$lib/images/unitto/unitto-logo.svg";
+  import { onMount } from "svelte";
 
   const drawerItems: Array<DrawerItem> = [
     {
@@ -29,69 +28,27 @@
     },
   ];
 
-  function openMenu() {
-    document
-      .getElementById("drawer")
-      ?.classList.replace("-translate-x-full", "translate-x-0");
-    document.getElementById("scrim")?.classList.replace("hidden", "visible");
-  }
-
-  function closeMenu() {
-    document
-      .getElementById("drawer")
-      ?.classList.replace("translate-x-0", "-translate-x-full");
-    document.getElementById("scrim")?.classList.replace("visible", "hidden");
-  }
-
-  console.log($page.route.id)
+  onMount(async () => {
+    const root: HTMLElement = document?.querySelector(":root") as HTMLElement;
+    root.style?.setProperty(
+      "scrollbar-color",
+      "rgba(0, 0, 0, 0.7) rgb(16, 21, 16)"
+    );
+  });
 </script>
 
-<div class="relative bg-unitto-dark-background text-unitto-dark-onBackground">
-  <!-- Top bar -->
-  <TopBar on:menuClick={openMenu} />
+<AdaptiveLayout
+  theme={UnittoTheme}
+  {drawerItems}
+  title="Unitto"
+  homeHref="/unitto"
+  logo={unittoLogo}
+>
+  <slot></slot>
+</AdaptiveLayout>
 
-  <!-- Scrim -->
-  <Scrim on:menuClick={closeMenu} />
-
-  <!-- Nav bar -->
-  <div
-    class="lg:hidden z-20 fixed top-0 h-full transition-transform -translate-x-full px-2 w-80 rounded-e-3xl bg-unitto-dark-surface text-unitto-dark-onSurface"
-    id="drawer"
-  >
-    <button on:click={closeMenu}>
-      <span
-        class="material-symbols-outlined hover:bg-unitto-dark-surfaceContainer-inactive-hover rounded-full p-3 m-2"
-      >
-        menu_open
-      </span>
-    </button>
-    {#each drawerItems as item}
-      <TabListItemHorizontal
-        title={item.titls}
-        icon={item.icon}
-        isSelected={$page.route.id === item.href}
-        href={item.href}
-        on:onNavigate={closeMenu}
-      />
-    {/each}
-  </div>
-
-  <div class="flex flex-row relative">
-    <div
-      class="hidden lg:block sticky top-0 h-screen bg-unitto-dark-surface text-unitto-dark-onSurface"
-    >
-      <!-- Navigation rail -->
-      <div class="flex flex-col gap-4 pt-6">
-        {#each drawerItems as item}
-          <TabListItemVertical
-            title={item.titls}
-            icon={item.icon}
-            isSelected={$page.route.id === item.href}
-            href={item.href}
-          />
-        {/each}
-      </div>
-    </div>
-    <slot />
-  </div>
-</div>
+<style>
+  :root {
+    scrollbar-width: auto;
+  }
+</style>
