@@ -1,6 +1,7 @@
 <script>
   import Footer from "./Footer.svelte";
   import { IndexxoTheme } from "./IndexxoTheme";
+  import heroImg from "$lib/images/indexxo/hero.png"
 
   const demoLink = "./demo/index.html";
 </script>
@@ -55,7 +56,7 @@
 
       <a href={demoLink} class="flex flex-col items-center">
         <button
-          style="background-image: url(/src/lib/images/indexxo/hero.png);"
+          style="background-image: url({heroImg});"
           class="group max-w-screen-sm w-full aspect-[840/900] bg-center bg-cover flex flex-col justify-center hover:brightness-50 place-items-center rounded-xl hover:rounded-2xl transition-all bg-origin-content bg-no-repeat hover:p-2 {IndexxoTheme.secondaryContainer}"
         />
       </a>

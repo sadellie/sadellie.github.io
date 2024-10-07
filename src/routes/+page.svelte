@@ -8,7 +8,6 @@
   import sadbotImg from "$lib/images/sadbot.png";
   import webImg from "$lib/images/web.png";
   import secretImg from "$lib/images/secret.png";
-  import contact1 from "$lib/images/contact.png";
 
   import Contact from "./Contact.svelte";
   import Email from "./Email.svelte";
