@@ -100,25 +100,25 @@
       titls: "Download",
       id: "feature4",
       support: "Get the app now",
-      description: "Get the app for you Android device",
+      description: "Get the app for your Android device",
       postHorizontal: postHorizontal4,
       postVertical: postVertical4,
       postVerticalId: "vert4",
       details: [
-        {
-          title: "Play Store",
-          support: "Get the app and leave a review",
-          href: "https://play.google.com/store/apps/details?id=com.sadellie.unitto",
-        },
-        {
-          title: "F-Droid",
-          support: "Support the freedom of choice",
-          href: "https://f-droid.org/packages/com.sadellie.unitto",
-        },
+        // {
+        //   title: "Play Store",
+        //   support: "Get the app and leave a review",
+        //   href: "https://play.google.com/store/apps/details?id=com.sadellie.unitto",
+        // },
+        // {
+        //   title: "F-Droid",
+        //   support: "Support the freedom of choice",
+        //   href: "https://f-droid.org/packages/com.sadellie.unitto",
+        // },
         {
           title: "GitHub",
-          support: "From the developer himself",
-          href: "https://github.com/sadellie/unitto",
+          support: "Latest version",
+          href: "https://github.com/sadellie/unitto/releases/latest",
         },
       ],
     },
