@@ -7,6 +7,7 @@
   import indexxoImg from "$lib/images/indexxo.png";
   import sadbotImg from "$lib/images/sadbot.png";
   import webImg from "$lib/images/web.png";
+  import idiot from "$lib/images/outofcontext.png";
   import secretImg from "$lib/images/secret.png";
 
   import Contact from "./Contact.svelte";
@@ -129,12 +130,20 @@
           title="sadBot"
           support="Chatbot for students"
           imgSrc={sadbotImg}
-          href="https://github.com/sadellie/indexxo"
+          href="https://github.com/sadellie/sadbot"
         />
       </div>
       <div>
         <Product
-          title="Web"
+          title='Web for "out of context"'
+          support="Made a website for my indian-based client Neha Prasad"
+          imgSrc={idiot}
+          href="https://outofcontext.me/"
+        />
+      </div>
+      <div>
+        <Product
+          title="Web for myself"
           support="This and other pages were designed and developed by me"
           imgSrc={webImg}
           href="#"
