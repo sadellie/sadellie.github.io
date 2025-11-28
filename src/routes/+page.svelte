@@ -4,6 +4,7 @@
   import Chip from "./Chip.svelte";
 
   import unittoImg from "$lib/images/unitto.png";
+  import sukkoImg from "$lib/images/sukko.png";
   import indexxoImg from "$lib/images/indexxo.png";
   import sadbotImg from "$lib/images/sadbot.png";
   import webImg from "$lib/images/web.png";
@@ -43,7 +44,7 @@
   >
     <div class="flex flex-col place place-items-center dark:invert">
       <p class="text-6xl md:text-8xl xl:text-9xl text-center font-medium">
-        Sad Ellie
+        Elshan Agaev
       </p>
       <p class="text-xl md:text-2xl text-center">young IT specialist</p>
     </div>
@@ -51,13 +52,13 @@
       <button
         class="py-6 px-12 bg-fuchsia-600 dark:bg-fuchsia-800 hover:bg-fuchsia-500 dark:hover:bg-fuchsia-700 transition-colors rounded-full text-2xl font-medium text-white dark:invert"
       >
-        Contact
+        Hire me!
       </button>
     </a>
   </div>
 
   <div class="max-w-screen-xl text-black dark:text-fuchsia-50">
-    <p class="text-4xl font-medium pt-16 pb-4 w-full">Who is Sad Ellie?</p>
+    <p class="text-4xl font-medium pt-16 pb-4 w-full">Need an IT expert?</p>
 
     <p class="w-full text-lg pb-2">
       Hello, my name is Elshan Agaev. I am an experienced:
@@ -119,6 +120,14 @@
       </div>
       <div>
         <Product
+          title="Sukko"
+          support="Create and share custom Android widgets"
+          imgSrc={sukkoImg}
+          href="/sukko"
+        />
+      </div>
+      <div>
+        <Product
           title="Unitto"
           support="Superior calculator and unit converter"
           imgSrc={unittoImg}
@@ -151,8 +160,8 @@
       </div>
       <div>
         <Product
-          title="Secret"
-          support="Unfortunately, some projects are secret due to NDA 😔"
+          title="Commercial projects"
+          support="I have experience in big and cool commercial projects. Contact me for more info!"
           imgSrc={secretImg}
           href="#"
         />
@@ -169,16 +178,14 @@
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-stretch"
       id="contact"
     >
-      <Contact title="Github" href="https://github.com/sadellie" img={hero}>
-        <Github />
-      </Contact>
-
       <Contact title="Email" href="mailto:sadellie.dev@gmail.com" img={hero}>
         <Email />
       </Contact>
-
       <Contact title="Telegram" href="https://t.me/sadellie" img={hero}>
         <Telegram />
+      </Contact>
+      <Contact title="Github" href="https://github.com/sadellie" img={hero}>
+        <Github />
       </Contact>
     </div>
   </div>
