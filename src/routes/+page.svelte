@@ -123,7 +123,7 @@
           title="Sukko"
           support="Create and share custom Android widgets"
           imgSrc={sukkoImg}
-          href="/sukko"
+          href="https://sadellie.github.io/sukko/"
         />
       </div>
       <div>
