@@ -33,6 +33,111 @@
       root.style?.setProperty("scrollbar-color", scrollbarColor);
     });
   });
+
+  interface Labels {
+    name: string;
+    hero: string;
+    heroAction: string;
+    aboutTitle: string;
+    aboutBody: string;
+    aboutBodySecondary: string;
+    systemAnalystTitle: string;
+    systemAnalystDocumentation: string;
+    businessAnalystTitle: string;
+    businessAnalystMarketAnalysis: string;
+    businessAnalystProjectManagement: string;
+    designerTitle: string;
+    developerTitle: string;
+    developerMobile: string;
+    developerWeb: string;
+    developerDesktop: string;
+    successfulProjects: string;
+    indexxoBody: string;
+    sukkoBody: string;
+    unittoBody: string;
+    sadbotBody: string;
+    webIdiotTitle: string;
+    webIdiotBody: string;
+    webPersonalTitle: string;
+    webPersonalBody: string;
+    commercialProjectsTitle: string;
+    commercialProjectsBody: string;
+    failedProductTitle: string;
+    failedProductBody: string;
+    contactMe: string;
+  }
+
+  const isRu = navigator.language.toLowerCase().startsWith("ru");
+  const labels: Labels = isRu
+    ? {
+        name: "Эльшан Агаев",
+        hero: "IT Специалист",
+        heroAction: "Наймите меня!",
+        aboutTitle: "Нужен эксперт в области IT?",
+        aboutBody: "Привет, меня зовут Эльшан Агаев:",
+        aboutBodySecondary:
+          "Это не все мои навыки, я постоянно изучаю что-то новое!",
+        systemAnalystTitle: "🤓 Системный аналитик",
+        systemAnalystDocumentation: "Документация",
+        businessAnalystTitle: "🤑 Бизнес аналитик",
+        businessAnalystMarketAnalysis: "Анализ рынка",
+        businessAnalystProjectManagement: "Управление проектами",
+        designerTitle: "🎨 Дизайнер",
+        developerTitle: "💻 Разработчик",
+        developerMobile: "Мобильные устройства",
+        developerWeb: "Веб",
+        developerDesktop: "Десктоп",
+        successfulProjects: "Успешные продукты",
+        indexxoBody: "Файловый индексатор для людей",
+        sukkoBody: "Создавай и делись кастомными Android виджетами",
+        unittoBody: "Превосходный калькулятор и перевод величин",
+        sadbotBody: "Чатбот для студентов",
+        webIdiotTitle: 'Веб для "out of context"',
+        webIdiotBody: "Сделал вебсайт для индийского клиента Neha Prasad",
+        webPersonalTitle: "Веб для своих проектов",
+        webPersonalBody: "Эта и другие страницы были полностью сделаны мной",
+        commercialProjectsTitle: "Коммерческие проекты",
+        commercialProjectsBody:
+          "У меня есть опыт в больших и крутых коммерческих проектах. Свяжитесь со мной, если хотите узнать больше!",
+        failedProductTitle: "Неудачные продукты",
+        failedProductBody: "Этот список пуст... всегда",
+        contactMe: "Свяжитесь со мной",
+      }
+    : {
+        name: "Elshan Agaev",
+        hero: "young IT specialist",
+        heroAction: "Hire me!",
+        aboutTitle: "Need an IT expert?",
+        aboutBody: "Hello, my name is Elshan Agaev. I am an experienced:",
+        aboutBodySecondary:
+          "These are not all my skills, I am constantly learning something new!",
+        systemAnalystTitle: "🤓 System analyst",
+        systemAnalystDocumentation: "Documentation",
+        businessAnalystTitle: "🤑 Business analyst",
+        businessAnalystMarketAnalysis: "Market analysis",
+        businessAnalystProjectManagement: "Project management",
+        designerTitle: "🎨 Designer",
+        developerTitle: "💻 Developer",
+        developerMobile: "Mobile",
+        developerWeb: "Web",
+        developerDesktop: "Desktop",
+        successfulProjects: "Successful projects",
+        indexxoBody: "File indexer for humans",
+        sukkoBody: "Create and share custom Android widgets",
+        unittoBody: "Superior calculator and unit converter",
+        sadbotBody: "Chatbot for students",
+        webIdiotTitle: 'Web for "out of context"',
+        webIdiotBody: "Made a website for my indian-based client Neha Prasad",
+        webPersonalTitle: "Web for myself",
+        webPersonalBody:
+          "This and other pages were designed and developed by me",
+        commercialProjectsTitle: "Commercial projects",
+        commercialProjectsBody:
+          "I have experience in big and cool commercial projects. Contact me for more info!",
+        failedProductTitle: "Failed products",
+        failedProductBody: "This list is empty... always",
+        contactMe: "Contact me",
+      };
 </script>
 
 <div
@@ -44,48 +149,50 @@
   >
     <div class="flex flex-col place place-items-center dark:invert">
       <p class="text-6xl md:text-8xl xl:text-9xl text-center font-medium">
-        Elshan Agaev
+        {labels.name}
       </p>
-      <p class="text-xl md:text-2xl text-center">young IT specialist</p>
+      <p class="text-xl md:text-2xl text-center">{labels.hero}</p>
     </div>
     <a href="#contact">
       <button
         class="py-6 px-12 bg-fuchsia-600 dark:bg-fuchsia-800 hover:bg-fuchsia-500 dark:hover:bg-fuchsia-700 transition-colors rounded-full text-2xl font-medium text-white dark:invert"
       >
-        Hire me!
+        {labels.heroAction}
       </button>
     </a>
   </div>
 
   <div class="max-w-screen-xl text-black dark:text-fuchsia-50">
-    <p class="text-4xl font-medium pt-16 pb-4 w-full">Need an IT expert?</p>
+    <p class="text-4xl font-medium pt-16 pb-4 w-full">
+      {labels.aboutTitle}
+    </p>
 
     <p class="w-full text-lg pb-2">
-      Hello, my name is Elshan Agaev. I am an experienced:
+      {labels.aboutBody}
     </p>
     <ol class="flex flex-col w-full gap-6 text-xl font-medium">
       <div class="flex flex-col gap-2">
-        <p>🤓 System analyst</p>
+        <p>{labels.systemAnalystTitle}</p>
         <div class="flex flex-wrap gap-2">
           <Chip>UML</Chip>
           <Chip>OpenAPI</Chip>
           <Chip>Linux</Chip>
-          <Chip>Documentation</Chip>
+          <Chip>{labels.systemAnalystDocumentation}</Chip>
           <Chip>Git</Chip>
         </div>
       </div>
 
       <div class="flex flex-col gap-2">
-        <p>🤑 Business analyst</p>
+        <p>{labels.businessAnalystTitle}</p>
         <div class="flex flex-wrap gap-2">
           <Chip>BPMN 2.0</Chip>
-          <Chip>Market analysis</Chip>
-          <Chip>Project management</Chip>
+          <Chip>{labels.businessAnalystMarketAnalysis}</Chip>
+          <Chip>{labels.businessAnalystProjectManagement}</Chip>
         </div>
       </div>
 
       <div class="flex flex-col gap-2">
-        <p>🎨 Designer</p>
+        <p>{labels.designerTitle}</p>
         <div class="flex flex-wrap gap-2">
           <Chip>Figma</Chip>
           <Chip>Photoshop</Chip>
@@ -95,17 +202,23 @@
       </div>
 
       <div class="flex flex-col gap-2">
-        <p>💻 Developer</p>
+        <p>{labels.developerTitle}</p>
         <div class="flex flex-wrap gap-2">
-          <Chip>Mobile</Chip>
-          <Chip>Web</Chip>
-          <Chip>Desktop</Chip>
-          <Chip>Console</Chip>
+          <Chip>{labels.developerMobile}</Chip>
+          <Chip>{labels.developerWeb}</Chip>
+          <Chip>{labels.developerDesktop}</Chip>
+          <Chip>CLI</Chip>
         </div>
       </div>
     </ol>
 
-    <p class="text-4xl font-medium pt-16 pb-4 w-full">Successful products</p>
+    <p class="w-full text-lg pt-4">
+      {labels.aboutBodySecondary}
+    </p>
+
+    <p class="text-4xl font-medium pt-16 pb-4 w-full">
+      {labels.successfulProjects}
+    </p>
 
     <div
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-stretch"
@@ -113,7 +226,7 @@
       <div>
         <Product
           title="Indexxo"
-          support="File indexer for humans"
+          support={labels.indexxoBody}
           imgSrc={indexxoImg}
           href="/indexxo"
         />
@@ -121,7 +234,7 @@
       <div>
         <Product
           title="Sukko"
-          support="Create and share custom Android widgets"
+          support={labels.sukkoBody}
           imgSrc={sukkoImg}
           href="https://sadellie.github.io/sukko/"
         />
@@ -129,7 +242,7 @@
       <div>
         <Product
           title="Unitto"
-          support="Superior calculator and unit converter"
+          support={labels.unittoBody}
           imgSrc={unittoImg}
           href="/unitto"
         />
@@ -137,42 +250,44 @@
       <div>
         <Product
           title="sadBot"
-          support="Chatbot for students"
+          support={labels.sadbotBody}
           imgSrc={sadbotImg}
           href="https://github.com/sadellie/sadbot"
         />
       </div>
       <div>
         <Product
-          title='Web for "out of context"'
-          support="Made a website for my indian-based client Neha Prasad"
+          title={labels.webIdiotTitle}
+          support={labels.webIdiotBody}
           imgSrc={idiot}
           href="https://outofcontext.me/"
         />
       </div>
       <div>
         <Product
-          title="Web for myself"
-          support="This and other pages were designed and developed by me"
+          title={labels.webPersonalTitle}
+          support={labels.webPersonalBody}
           imgSrc={webImg}
           href="#"
         />
       </div>
       <div>
         <Product
-          title="Commercial projects"
-          support="I have experience in big and cool commercial projects. Contact me for more info!"
+          title={labels.commercialProjectsTitle}
+          support={labels.commercialProjectsBody}
           imgSrc={secretImg}
-          href="#"
+          href="#contact"
         />
       </div>
     </div>
 
-    <p class="text-4xl font-medium pt-16 pb-4 w-full">Failed products</p>
+    <p class="text-4xl font-medium pt-16 pb-4 w-full">
+      {labels.failedProductTitle}
+    </p>
 
-    <p>This list is empty... always</p>
+    <p>{labels.failedProductBody}</p>
 
-    <p class="text-4xl font-medium pt-16 pb-4 w-full">Contact</p>
+    <p class="text-4xl font-medium pt-16 pb-4 w-full">{labels.contactMe}</p>
 
     <div
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-stretch"
