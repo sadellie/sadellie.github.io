@@ -1,4 +1,7 @@
 version:0
+string|android_exclusive_action|R2V0IEFuZHJvaWQgdmVyc2lvbg==
+string|android_exclusive_text|VGhpcyBmZWF0dXJlIGlzIG9ubHkgYXZhaWxhYmxlIGluIEFuZHJvaWQgdmVyc2lvbiBvZiB0aGUgYXBw
+string|android_exclusive_title|QW5kcm9pZCBleGNsdXNpdmU=
 string|app_name|VW5pdHRv
 string|body_mass_height|SGVpZ2h0
 string|body_mass_imperial|SW1wZXJpYWw=
