@@ -31,8 +31,6 @@
       ?.classList.replace("translate-x-0", "-translate-x-full");
     document.getElementById(scrimId)?.classList.replace("visible", "hidden");
   }
-
-  console.log($page.route.id);
 </script>
 
 <div class="relative {theme.background} {theme.onBackgroundText} min-h-screen">
@@ -51,7 +49,7 @@
   <NavigationDrawer {theme} on:menuClick={closeMenu} id={drawerId}>
     {#each drawerItems as item}
       <NavigationDrawerItem
-        title={item.titls}
+        title={item.title}
         icon={item.icon}
         isSelected={$page.route.id === item.href}
         href={item.href}
@@ -65,7 +63,7 @@
     <NavigationRail {theme}>
       {#each drawerItems as item}
         <NavigationRailItem
-          title={item.titls}
+          title={item.title}
           icon={item.icon}
           isSelected={$page.route.id === item.href}
           href={item.href}

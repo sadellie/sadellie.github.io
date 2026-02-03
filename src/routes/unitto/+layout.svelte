@@ -8,22 +8,22 @@
   const drawerItems: Array<DrawerItem> = [
     {
       href: "/unitto",
-      titls: "Overview",
+      title: "Overview",
       icon: "home",
     },
     {
       href: "/unitto/privacy",
-      titls: "Privacy",
+      title: "Privacy",
       icon: "policy",
     },
     {
       href: "/unitto/terms",
-      titls: "Terms and Conditions",
+      title: "Terms and Conditions",
       icon: "privacy_tip",
     },
     {
       href: "/unitto/help",
-      titls: "Help",
+      title: "Help",
       icon: "help",
     },
   ];

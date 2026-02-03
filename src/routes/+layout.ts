@@ -1,3 +1,3 @@
-import "../app.postcss";
+import "./app.css";
 export const prerender = true;
 export const trailingSlash = "always";

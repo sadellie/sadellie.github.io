@@ -23,7 +23,7 @@
 
   const features: Array<Feature> = [
     {
-      titls: "What's Unitto?",
+      title: "What's Unitto?",
       id: "feature1",
       support: "Learn how Unitto helps people everyday",
       description:
@@ -47,7 +47,7 @@
       ],
     },
     {
-      titls: "Tools",
+      title: "Tools",
       id: "feature2 ",
       support: "Check out what Unitto has to offer for you",
       description:
@@ -71,9 +71,9 @@
       ],
     },
     {
-      titls: "Customize",
+      title: "Customize",
       id: "feature3",
-      support: "See why Unitto is the only true customizable calculator",
+      support: "The only true customizable calculator",
       description:
         "Unitto offers a wide range of options to personilze your app. Users can change every aspect of the app.<br/><br/>All settings are intuitive and simple, you don't need a degree in science 🤓.",
       postHorizontal: postHorizontal3,
@@ -97,7 +97,7 @@
       ],
     },
     {
-      titls: "Download",
+      title: "Download",
       id: "feature4",
       support: "Get the app now",
       description: "Get the app for your Android device",
@@ -157,10 +157,10 @@
 <div class="px-2 pt-2 w-full scroll-smooth">
   <Hero {features} />
 
-  <div class="xl:hidden grid gap-4 py-8">
+  <div class="xl:hidden grid md:grid-cols-2 gap-2 py-4">
     {#each features as feat}
       <FeatureItem
-        title={feat.titls}
+        title={feat.title}
         support={feat.support}
         href="#{feat.id}"
       />
@@ -177,7 +177,7 @@
         <FeatureDetail
           id={feat.id}
           image={feat.postHorizontal}
-          title={feat.titls}
+          title={feat.title}
           detail={feat.description}
         >
           {#each feat.details as detail}

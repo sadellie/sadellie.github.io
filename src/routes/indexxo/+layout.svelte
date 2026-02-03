@@ -8,22 +8,22 @@
   const drawerItems: Array<DrawerItem> = [
     {
       href: "/indexxo",
-      titls: "Overview",
+      title: "Overview",
       icon: "home",
     },
     {
       href: "/indexxo/privacy",
-      titls: "Privacy",
+      title: "Privacy",
       icon: "policy",
     },
     {
       href: "/indexxo/terms",
-      titls: "Terms and Conditions",
+      title: "Terms and Conditions",
       icon: "privacy_tip",
     },
     {
       href: "/indexxo/help",
-      titls: "Help",
+      title: "Help",
       icon: "help",
     },
   ];

@@ -125,6 +125,7 @@ string|settings_ac_button|QUMgYnV0dG9u
 string|settings_additional|QWRkaXRpb25hbA==
 string|settings_amoled_dark_support|VXNlIGJsYWNrIGJhY2tncm91bmQgZm9yIGRhcmsgdGhlbWVz
 string|settings_amoled_dark|QU1PTEVEIERhcms=
+string|settings_author|RGV2ZWxvcGVkIGJ5IEVsc2hhbiBBZ2Fldg==
 string|settings_auto|QXV0bw==
 string|settings_back_up|QmFjayB1cA==
 string|settings_backup_support|QmFjayB1cCBhbmQgcmVzdG9yZSB5b3VyIGRhdGE=
@@ -156,6 +157,7 @@ string|settings_fractional_output_support|U2hvdyByZXN1bHRzIGFzIGZyYWN0aW9ucw==
 string|settings_fractional_output|RnJhY3Rpb25hbCBvdXRwdXQ=
 string|settings_history_view_button_support|U2hvdyBidXR0b24gdG8gdG9nZ2xlIGhpc3Rvcnkgdmlldw==
 string|settings_history_view_button|SGlzdG9yeSB2aWV3IGJ1dHRvbg==
+string|settings_indian_numbering_system|SW5kaWFuIG51bWJlcmluZyBzeXN0ZW0=
 string|settings_keep_screen_on_support|UHJldmVudCB5b3VyIGRldmljZSBmcm9tIHR1cm5pbmcgb2ZmIHRoZSBzY3JlZW4gd2hpbGUgdGhlIGFwcCBpcyBvcGVu
 string|settings_keep_screen_on|S2VlcCBzY3JlZW4gb24=
 string|settings_language_support|Q2hhbmdlIHRoZSBhcHAgbGFuZ3VhZ2U=
@@ -200,6 +202,8 @@ string|settings_unit_groups_title|VW5pdCBncm91cHM=
 string|settings_unit_groups_undo|VW5kbw==
 string|settings_units_sorting_support|Q2hhbmdlIHVuaXRzIG9yZGVy
 string|settings_units_sorting|VW5pdHMgbGlzdCBzb3J0aW5n
+string|settings_unitto_anywhere_support|VXNlIFVuaXR0byBvbiBhbnkgZGV2aWNl
+string|settings_unitto_anywhere|VHJ5IFVuaXR0byBpbiB5b3VyIGJyb3dzZXI=
 string|settings_updated_support|U2VlIHdoYXQncyBuZXcgaW4gdmVyc2lvbiAlMSRz
 string|settings_updated|JTEkcyBoYXMgYmVlbiB1cGRhdGVk
 string|settings_used_units|VXNlZCB1bml0cw==
@@ -1087,7 +1091,7 @@ string|unit_megapascal_short|TVBh
 string|unit_megapascal|TWVnYXBhc2NhbA==
 string|unit_megaton_short|TXQ=
 string|unit_megaton|TWVnYXRvbiBvZiBUTlQ=
-string|unit_megawatt_short|TUc=
+string|unit_megawatt_short|TVc=
 string|unit_megawatt|TWVnYXdhdHQ=
 string|unit_megaweber_short|TVdi
 string|unit_megaweber|TWVnYXdlYmVy
