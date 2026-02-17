@@ -16,7 +16,7 @@
 >
   <button on:click={click}>
     <span
-      class="material-symbols-outlined {theme.onSurfaceHover} rounded-full p-3 m-2"
+      class="material-symbols-outlined {theme.onSurfaceHover} rounded-full p-3 m-2 cursor-pointer"
     >
       menu_open
     </span>

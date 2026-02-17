@@ -52,7 +52,3 @@
     scrollbar-width: auto;
   }
 </style>
-
-<head>
-  <link rel="icon" href="{logoImg}">
-</head>

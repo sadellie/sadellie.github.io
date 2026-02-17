@@ -27,7 +27,7 @@
       <TextHeader2>But… why?</TextHeader2>
       <button on:click={toggleTimeZoneDetails}>
         <span
-          class="transition-transform material-symbols-outlined rounded-full p-3 m-2 {UnittoTheme.onSecondaryContainerHover}"
+          class="transition-transform material-symbols-outlined rounded-full p-3 m-2 {UnittoTheme.onSecondaryContainerHover} cursor-pointer"
           class:rotate-180={addTimeZoneDetail}>expand_more</span
         >
       </button>

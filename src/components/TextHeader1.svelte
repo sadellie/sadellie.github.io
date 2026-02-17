@@ -25,7 +25,7 @@
   <button
     on:click={copyAnchor}
     class:hidden={id === ""}
-    class="relative group/button"
+    class="relative group/button cursor-pointer"
   >
     <span
       class="transition-transform group-hover:opacity-100 opacity-0 material-symbols-outlined rounded-full p-3 m-2 {theme.onSurfaceHover}"

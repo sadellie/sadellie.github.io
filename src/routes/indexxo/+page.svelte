@@ -24,7 +24,7 @@
           <a href="https://github.com/sadellie/indexxo/">
             <button
               type="button"
-              class="rounded-full overflow-hidden {IndexxoTheme.primary}"
+              class="rounded-full overflow-hidden {IndexxoTheme.primary} cursor-pointer"
             >
               <div
                 class="flex flex-row justify-center items-center h-12 sm:h-16 px-8 sm:px-10 {IndexxoTheme.onPrimaryHover}"
@@ -38,7 +38,7 @@
           <a href={demoLink}>
             <button
               type="button"
-              class="rounded-full overflow-hidden {IndexxoTheme.outlineVariantBorder}"
+              class="rounded-full overflow-hidden {IndexxoTheme.outlineVariantBorder} cursor-pointer"
             >
               <div
                 class="flex flex-row justify-center items-center h-12 sm:h-16 px-8 sm:px-10 {IndexxoTheme.onSurfaceHover}"
@@ -57,7 +57,7 @@
       <a href={demoLink} class="flex flex-col items-center">
         <button
           style="background-image: url({heroImg});"
-          class="group max-w-screen-sm w-full aspect-[840/900] bg-center bg-cover flex flex-col justify-center hover:brightness-50 place-items-center rounded-xl hover:rounded-2xl transition-all bg-origin-content bg-no-repeat hover:p-2 {IndexxoTheme.secondaryContainer}"
+          class="group max-w-screen-sm w-full aspect-[840/900] bg-center bg-cover flex flex-col justify-center hover:brightness-50 place-items-center rounded-xl hover:rounded-2xl transition-all bg-origin-content bg-no-repeat hover:p-2 {IndexxoTheme.secondaryContainer} cursor-pointer"
         />
       </a>
       <Footer />
