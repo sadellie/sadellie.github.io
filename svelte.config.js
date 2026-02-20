@@ -11,6 +11,7 @@ const config = {
       handleHttpError: ({ path, referrer, message }) => {
         return;
       },
+      entries: ["/ru"],
     },
   },
 };
