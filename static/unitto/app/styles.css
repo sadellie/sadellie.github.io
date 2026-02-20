@@ -1,7 +1,72 @@
-html, body {
+:root {
+  --bg-color: #edefe2;
+  --text-color: #303429;
+  --bar-color: #4f6632;
+  --track-color: #e1e4d4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #181b13;
+    --text-color: #e4e7d7;
+    --bar-color: #b9ce9b;
+    --track-color: #23271d;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.loading-text {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.progress-track {
+  width: min(60vw, 800px);
+  height: 20px;
+  background-color: var(--track-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--bar-color);
+  animation: fakeLoading 30s infinite ease-in-out;
+}
+
+@keyframes fakeLoading {
+  0% {
+    width: 0%;
+  }
+  10% {
+    width: 80%;
+  }
+  50% {
+    width: 90%;
+  }
+  100% {
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  }
 }
