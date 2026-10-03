@@ -1,4 +1,4 @@
-const CACHE_NAME = "unitto-wasm-cache-v1";
+const CACHE_NAME = "unitto-wasm-cache-v2";
 
 const ASSETS = ["index.html", "manifest.json"];
 
